@@ -12,3 +12,4 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Ent
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.pdb
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\ref\SistemaVenta.Entity.dll
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.sourcelink.json
