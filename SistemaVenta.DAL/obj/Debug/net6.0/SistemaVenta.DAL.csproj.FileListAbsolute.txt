@@ -12,5 +12,5 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.Entity.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.Entity.pdb
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.AssemblyReference.cache
-C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.CopyComplete
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.sourcelink.json
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaV.EE7A9206.Up2Date

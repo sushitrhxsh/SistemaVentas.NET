@@ -66,7 +66,6 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Apl
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.IOC.pdb
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.DAL.pdb
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.csproj.AssemblyReference.cache
-C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.csproj.CopyComplete
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Humanizer.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\MessagePack.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -255,3 +254,6 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Apl
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.sourcelink.json
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaV.726C8CFD.Up2Date
