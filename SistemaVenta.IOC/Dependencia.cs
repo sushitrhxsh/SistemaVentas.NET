@@ -26,10 +26,10 @@ namespace SistemaVenta.IOC
             });
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddScoped<IVentaRepository, VentaRepository>();
+            services.AddScoped<IVentaRepository, VentaRepository>(); // Servicios de Venta(Interface, Service)
 
-            services.AddScoped<ICorreoService, CorreoService>();
-            services.AddScoped<IFirebaseService, FirebaseService>();
+            services.AddScoped<ICorreoService, CorreoService>();    // Servicios de Correo(Interface, Service)
+            services.AddScoped<IFirebaseService, FirebaseService>(); // Servicios de Firebase(Interface, Service)
 
         }
 
