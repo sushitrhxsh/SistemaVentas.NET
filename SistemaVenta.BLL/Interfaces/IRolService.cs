@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SistemaVenta.Entity;
 
 namespace SistemaVenta.BLL.Interfaces
 {
-    public interface ICorreoService
+    public interface IRolService
     {
-        Task<bool> EnviarCorreo(string CorreoDestino, string Asunto, string Mensaje);
-
+        Task<List<Rol>> Lista();
     }
 }

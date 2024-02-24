@@ -17,7 +17,6 @@ namespace SistemaVenta.IOC
 {
     public static class Dependencia
     {
-
         public static void InyectarDependecia(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<DBVENTAContext>(options =>
@@ -30,8 +29,10 @@ namespace SistemaVenta.IOC
 
             services.AddScoped<ICorreoService, CorreoService>();    // Servicios de Correo(Interface, Service)
             services.AddScoped<IFirebaseService, FirebaseService>(); // Servicios de Firebase(Interface, Service)
-
+            
+            services.AddScoped<IUtilidadesService, UtilidadesService>(); // Servicios de Utilidades(Interface, Service)
+            services.AddScoped<IRolService, RolService>(); // Servicios de Rol(Interface, Service)
+        
         }
-
     }
 }

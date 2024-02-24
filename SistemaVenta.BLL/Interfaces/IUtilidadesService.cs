@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace SistemaVenta.BLL.Interfaces
 {
-    public interface ICorreoService
+    public interface IUtilidadesService
     {
-        Task<bool> EnviarCorreo(string CorreoDestino, string Asunto, string Mensaje);
-
+        string GenerarClave();
+        string ConvertirSha256(string texto);
     }
 }
