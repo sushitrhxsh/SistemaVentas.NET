@@ -7,7 +7,7 @@ namespace SistemaVenta.BLL.Interfaces
 {
     public interface IFirebaseService
     {
-        Task<string> SubirStore(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo);
-        Task<bool> EliminarStore(string CarpetaDestino, string NombreArchivo);
+        Task<string> SubirStorage(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo);
+        Task<bool> EliminarStorage(string CarpetaDestino, string NombreArchivo);
     }
 }

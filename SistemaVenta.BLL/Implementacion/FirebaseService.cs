@@ -19,7 +19,7 @@ namespace SistemaVenta.BLL.Implementacion
             _repositorio = repositorio;
         }
 
-         public async Task<string> SubirStore(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo)
+         public async Task<string> SubirStorage(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo)
         {
             string UrlImagen = "";
             try
@@ -53,7 +53,7 @@ namespace SistemaVenta.BLL.Implementacion
             return UrlImagen;
         }
 
-        public async Task<bool> EliminarStore(string CarpetaDestino, string NombreArchivo)
+        public async Task<bool> EliminarStorage(string CarpetaDestino, string NombreArchivo)
         {
             
             try
