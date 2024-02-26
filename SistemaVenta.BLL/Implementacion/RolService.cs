@@ -11,6 +11,7 @@ namespace SistemaVenta.BLL.Implementacion
 {
     public class RolService : IRolService
     {
+        
         private readonly IGenericRepository<Rol> _repositorio;
         public RolService(IGenericRepository<Rol> repositorio)
         {

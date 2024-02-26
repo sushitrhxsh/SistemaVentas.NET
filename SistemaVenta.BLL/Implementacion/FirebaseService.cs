@@ -13,6 +13,7 @@ namespace SistemaVenta.BLL.Implementacion
 {
     public class FirebaseService : IFirebaseService
     {
+        
         private readonly IGenericRepository<Configuracion> _repositorio;
         public FirebaseService(IGenericRepository<Configuracion> repositorio)
         {

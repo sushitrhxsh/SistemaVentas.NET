@@ -13,6 +13,7 @@ namespace SistemaVenta.BLL.Implementacion
 {
     public class CorreoService : ICorreoService
     {
+        
         private readonly IGenericRepository<Configuracion> _repositorio;
         public CorreoService(IGenericRepository<Configuracion> repositorio)
         {
