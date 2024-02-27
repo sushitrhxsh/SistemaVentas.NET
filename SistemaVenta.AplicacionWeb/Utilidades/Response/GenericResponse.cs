@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SistemaVenta.AplicacionWeb.Utilidades
+namespace SistemaVenta.AplicacionWeb.Utilidades.Response
 {
     public class GenericResponse<TObject>
     {
