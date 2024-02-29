@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaVenta.IOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f86427d4dec60ebffa5f52ffaff016bd4ff5504a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e4ba317c697fd6fdd5f35d6a15462dda46221de")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaVenta.IOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaVenta.IOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
