@@ -41,6 +41,7 @@ namespace SistemaVenta.BLL.Implementacion
                 negocio_encontrado.NumeroDocumento = entidad.NumeroDocumento;
                 negocio_encontrado.Nombre = entidad.Nombre;
                 negocio_encontrado.Correo = entidad.Correo;
+                negocio_encontrado.Direccion = entidad.Direccion;
                 negocio_encontrado.Telefono = entidad.Telefono;
                 negocio_encontrado.PorcentajeImpuesto = entidad.PorcentajeImpuesto;
                 negocio_encontrado.SimboloMoneda = entidad.SimboloMoneda;

@@ -11,6 +11,7 @@ const MODELO_BASE = {
 }
 
 $(document).ready(function(){
+    
     fetch("/Usuario/ListaRoles")
     .then(response => {
         return response.ok ? response.json() : Promise.reject(response);

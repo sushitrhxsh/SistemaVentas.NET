@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\js\\sb-admin-2.min.js"
     },
     {
+      "Id": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Negocio.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\Negocio.js"
+    },
+    {
       "Id": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Usuario.js",
       "PackagePath": "staticwebassets\\js\\vistas\\Usuario.js"
     },
