@@ -1,4 +1,3 @@
-
 $(document).ready(function (){
 
     $(".card-body").LoadingOverlay("show");

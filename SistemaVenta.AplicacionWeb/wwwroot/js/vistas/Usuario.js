@@ -1,4 +1,3 @@
-
 let tablaData;
 const MODELO_BASE = {
     idUsuario: 0,
