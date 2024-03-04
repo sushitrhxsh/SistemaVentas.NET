@@ -33,7 +33,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear([FromForm]IFormFile Imagen,[FromForm]string modelo)
+        public async Task<IActionResult> Crear([FromForm]IFormFile imagen,[FromForm]string modelo)
         {
             GenericResponse<VMProducto> gResponse = new GenericResponse<VMProducto>();
             try
@@ -43,11 +43,11 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                 string nombreImagen = "";
                 Stream imagenStream = null;
 
-                if(Imagen != null){
+                if(imagen != null){
                     string nombre_codigo = Guid.NewGuid().ToString("N");
-                    string extension = Path.GetExtension(Imagen.FileName);
+                    string extension = Path.GetExtension(imagen.FileName);
                     nombreImagen = string.Concat(nombre_codigo,extension);
-                    imagenStream = Imagen.OpenReadStream();
+                    imagenStream = imagen.OpenReadStream();
                 }
 
                 Producto producto_creado = await _productoService.Crear(_mapper.Map<Producto>(vmProducto),imagenStream,nombreImagen);
@@ -66,20 +66,24 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Editar([FromForm]IFormFile Imagen,[FromForm]string modelo)
+        public async Task<IActionResult> Editar([FromForm]IFormFile imagen,[FromForm]string modelo)
         {
             GenericResponse<VMProducto> gResponse = new GenericResponse<VMProducto>();
             try
             {
                 VMProducto vmProducto = JsonConvert.DeserializeObject<VMProducto>(modelo);
 
+                string nombreImagen = "";
                 Stream imagenStream = null;
 
-                if(Imagen != null){
-                    imagenStream = Imagen.OpenReadStream();
+                if(imagen != null){
+                    string nombre_codigo = Guid.NewGuid().ToString("N");
+                    string extension = Path.GetExtension(imagen.FileName);
+                    nombreImagen = string.Concat(nombre_codigo,extension);
+                    imagenStream = imagen.OpenReadStream();
                 }
 
-                Producto producto_editado = await _productoService.Editar(_mapper.Map<Producto>(vmProducto),imagenStream);
+                Producto producto_editado = await _productoService.Editar(_mapper.Map<Producto>(vmProducto),imagenStream,nombreImagen);
 
                 vmProducto = _mapper.Map<VMProducto>(producto_editado);
 

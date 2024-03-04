@@ -32,7 +32,7 @@ $(document).ready(function (){
 /* ---------------------------------- *
  *      Funciones de acciones         *
  * ---------------------------------- */
-$("#btnGuardarCambios").click(function(){
+$("#btnGuardarCambios").click(function (){
     const inputs = $(".input-validar").serializeArray();
     const inputs_sin_valor = inputs.filter((item) => item.value.trim() === "")
 

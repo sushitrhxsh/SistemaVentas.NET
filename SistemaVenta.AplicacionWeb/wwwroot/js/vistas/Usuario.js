@@ -9,7 +9,7 @@ const MODELO_BASE = {
     urlFoto: ""
 }
 
-$(document).ready(function(){
+$(document).ready(function (){
     
     fetch("/Usuario/ListaRoles")
     .then(response => {
@@ -70,12 +70,12 @@ $(document).ready(function(){
 /* ------------------------------------- *
  *       Funciones de acciones           *
  * ------------------------------------- */
-$("#btnNuevo").click(function(){
+$("#btnNuevo").click(function (){
     mostralModal();
 });
 
 // Guardar
-$("#btnGuardar").click(function(){
+$("#btnGuardar").click(function (){
     const inputs = $(".input-validar").serializeArray();
     const inputs_sin_valor = inputs.filter((item) => item.value.trim() === "")
 
@@ -147,7 +147,7 @@ $("#btnGuardar").click(function(){
 
 // Editar
 let filaSeleccionada;
-$("#tbdata tbody").on("click",".btn-editar", function(){
+$("#tbdata tbody").on("click",".btn-editar", function (){
     if($(this).closest("tr").hasClass("child")){
         filaSeleccionada = $(this).closest("tr").prev();
     } else {
@@ -160,7 +160,7 @@ $("#tbdata tbody").on("click",".btn-editar", function(){
 });
 
 // Eliminar
-$("#tbdata tbody").on("click",".btn-eliminar", function(){
+$("#tbdata tbody").on("click",".btn-eliminar", function (){
     let fila;
     if($(this).closest("tr").hasClass("child")){
         fila = $(this).closest("tr").prev();

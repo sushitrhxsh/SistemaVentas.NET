@@ -27,7 +27,7 @@ namespace SistemaVenta.BLL.Implementacion
             return query.Include(c => c.IdCategoriaNavigation).ToList();
         }
 
-        public async Task<Producto> Crear(Producto entidad, Stream Imagen = null, string NombreImagen = "")
+        public async Task<Producto> Crear(Producto entidad, Stream imagen = null, string NombreImagen = "")
         {
             Producto producto_existe = await _repositorio.Obtener(p => p.CodigoBarra == entidad.CodigoBarra);
             
@@ -38,8 +38,8 @@ namespace SistemaVenta.BLL.Implementacion
             try
             {
                 entidad.NombreImagen = NombreImagen;
-                if(Imagen != null){
-                    string urlImagen = await _fireBaseService.SubirStorage(Imagen,"carpeta_producto",NombreImagen);
+                if(imagen != null){
+                    string urlImagen = await _fireBaseService.SubirStorage(imagen,"carpeta_producto",NombreImagen);
                     entidad.UrlImagen = urlImagen;
                 }
 
@@ -58,7 +58,7 @@ namespace SistemaVenta.BLL.Implementacion
 
         }
 
-        public async Task<Producto> Editar(Producto entidad, Stream Imagen = null)
+        public async Task<Producto> Editar(Producto entidad, Stream imagen = null, string NombreImagen = "")
         {
             Producto producto_existe = await _repositorio.Obtener(p => p.CodigoBarra == entidad.CodigoBarra && p.IdProducto != entidad.IdProducto);
             if(producto_existe != null){
@@ -78,8 +78,12 @@ namespace SistemaVenta.BLL.Implementacion
                 producto_editar.Precio = entidad.Precio;
                 producto_editar.EsActivo = entidad.EsActivo;
 
-                if(Imagen != null){
-                    string urlImagen = await _fireBaseService.SubirStorage(Imagen,"carpeta_producto",producto_editar.NombreImagen);
+                if(producto_editar.NombreImagen == ""){
+                    producto_editar.NombreImagen = NombreImagen;
+                }
+
+                if(imagen != null){
+                    string urlImagen = await _fireBaseService.SubirStorage(imagen,"carpeta_producto",producto_editar.NombreImagen);
                     producto_editar.UrlImagen = urlImagen;
                 }
 

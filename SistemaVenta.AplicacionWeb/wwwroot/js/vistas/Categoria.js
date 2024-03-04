@@ -5,7 +5,7 @@ const MODELO_BASE = {
     esActivo: 1,
 }
 
-$(document).ready(function(){
+$(document).ready(function (){
 
     tablaData = $("#tbdata").DataTable({
         responsive: true,
@@ -49,12 +49,12 @@ $(document).ready(function(){
 /* ------------------------------------- *
  *       Funciones de acciones           *
  * ------------------------------------- */
-$("#btnNuevo").click(function(){
+$("#btnNuevo").click(function (){
     mostralModal();
 });
 
 // Guardar
-$("#btnGuardar").click(function(){
+$("#btnGuardar").click(function (){
     
     if($("#txtDescripcion").val().trim() == ""){
         toastr.warning("", "Debe completar el campo descripcion");
@@ -116,7 +116,7 @@ $("#btnGuardar").click(function(){
 
 // Editar
 let filaSeleccionada;
-$("#tbdata tbody").on("click",".btn-editar", function(){
+$("#tbdata tbody").on("click",".btn-editar", function (){
     if($(this).closest("tr").hasClass("child")){
         filaSeleccionada = $(this).closest("tr").prev();
     } else {
@@ -129,7 +129,7 @@ $("#tbdata tbody").on("click",".btn-editar", function(){
 });
 
 // Eliminar
-$("#tbdata tbody").on("click",".btn-eliminar", function(){
+$("#tbdata tbody").on("click",".btn-eliminar", function (){
     let fila;
     if($(this).closest("tr").hasClass("child")){
         fila = $(this).closest("tr").prev();
