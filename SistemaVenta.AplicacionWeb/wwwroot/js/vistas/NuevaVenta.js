@@ -26,7 +26,7 @@ $(document).ready(function (){
     .then(responseJson => {
         if(responseJson.estado){
             const d = responseJson.objeto;
-            console.log(d);
+            //console.log(d);
 
             $("#inputGroupSubTotal").text(`Sub total - ${d.simboloMoneda}`);
             $("#inputGroupIGV").text(`IGV(${d.porcentajeImpuesto}%) - ${d.simboloMoneda}`);
@@ -67,8 +67,6 @@ $(document).ready(function (){
         minimumInputLength: 1,
         templateResult: formatResultados,
     });
-
-
 });
 
 /* ----------------------------------------- *
@@ -210,41 +208,47 @@ $("#btnTerminarVenta").click(function (){
     }
 
     const vmDetalleVenta = ProductosParaVenta;
+    console.log("vmDetalleVenta",vmDetalleVenta);
     const venta = {
         idTipoDocumentoVenta:$("#cboTipoDocumentoVenta").val(),
         documentoCliente:    $("#txtDocumentoCliente").val(),
         nombreCliente:       $("#txtNombreCliente").val(),
         subTotal:            $("#txtSubTotal").val(),
         impuestoTotal:       $("#txtIGV").val(),
-        total:               $("txtTotal").val(),
+        total:               $("#txtTotal").val(),
         DetalleVenta:        vmDetalleVenta
     }
+    console.log("venta",venta)
 
-    $("#btnTerminarVenta").LoadingOverlay("show");
+   $("#btnTerminarVenta").LoadingOverlay("show");
 
     fetch("/Venta/RegistrarVenta",{
         method: "POST",
         headers: {"Content-Type":"application/json;charset=utf-8"},
-        body: JSON.stringify(venta)
+        body: JSON.stringify(venta),
     }) 
     .then(response => {
+        console.log("response",response);
         $("#btnTerminarVenta").LoadingOverlay("hide");
         return response.ok ? response.json() : Promise.reject(response);
     })
     .then(responseJson => {
+        console.log("/Venta/RegistrarVenta",responseJson.objeto);
         if(responseJson.estado){
+            console.log("If:",responseJson);
             ProductosParaVenta = [];
             mostrarProductoPrecios();
 
             $("#txtDocumentoCliente").val("");
             $("#txtNombreCliente").val("");
-            $("##cboTipoDocumentoVenta").val($("#cboTipoDocumentoVenta option:first").val());
+            $("#cboTipoDocumentoVenta").val($("#cboTipoDocumentoVenta option:first").val());
 
             swal("Registrado!", `Numero Venta: ${responseJson.objeto.numeroVenta}`, "success");
 
         } else {
             // Checarlo mañana no guarda el dato y pasa directo al else
             swal("Lo sentimos!", "No se pudo registrar la venta", "error");
+            console.log("else:",responseJson.objeto);
         }
     });
 

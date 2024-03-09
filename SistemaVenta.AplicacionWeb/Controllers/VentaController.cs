@@ -56,7 +56,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             {
                 modelo.IdUsuario = 1; // Temporal se va a cambiar despues
 
-                Venta venta_creada = await _ventaService.Registrar(_mapper.Map<Venta>(modelo));
+                Venta venta_creada = await _ventaService.Registrar(_mapper.Map<Venta>(modelo)); 
                 modelo = _mapper.Map<VMVenta>(venta_creada);
 
                 gResponse.Estado = true;
