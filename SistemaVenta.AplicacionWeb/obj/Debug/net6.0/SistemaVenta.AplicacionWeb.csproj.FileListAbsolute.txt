@@ -259,3 +259,4 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.Apl
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaV.726C8CFD.Up2Date
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\DinkToPdf.dll
