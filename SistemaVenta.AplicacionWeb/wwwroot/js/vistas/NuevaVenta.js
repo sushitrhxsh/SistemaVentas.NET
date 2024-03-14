@@ -147,8 +147,8 @@ $("#cboBuscarProducto").on("select2:select",function(e){
                 descripcionProducto:data.text,
                 categoriaProducto:  data.categoria,
                 cantidad:           parseInt(valor),
-                precio:             data.precio.toString(),
-                total:              (parseFloat(valor) * data.precio.toString())
+                precioProducto:             data.precio.toString(),
+                totalProducto:              (parseFloat(valor) * data.precio.toString())
             }
 
             ProductosParaVenta.push(producto);
@@ -169,7 +169,7 @@ function mostrarProductoPrecios(){
 
     $("#tbProducto tbody").html("");
     ProductosParaVenta.forEach((item) => {
-        total = total + parseFloat(item.total);
+        total = total + parseFloat(item.totalProducto);
         $("#tbProducto tbody").append(
             $("<tr>").append(
                 $("<td>").append(
@@ -179,8 +179,8 @@ function mostrarProductoPrecios(){
                 ),
                 $("<td>").text(item.descripcionProducto),
                 $("<td>").text(item.cantidad),
-                $("<td>").text(item.precio),
-                $("<td>").text(item.total)
+                $("<td>").text(item.precioProducto),
+                $("<td>").text(item.totalProducto)
             )
         );
     });
