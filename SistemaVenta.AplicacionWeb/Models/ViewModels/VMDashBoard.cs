@@ -13,5 +13,6 @@ namespace SistemaVenta.AplicacionWeb.Models.ViewModels
         public int? TotalCategorias { get; set; }
         public List<VMVentasSemana> VentasUltimaSemana { get; set; }
         public List<VMVentasSemana> VentasTopUltimaSemana { get; set; }
+        public List<VMProductosSemana> ProductosTopUltimaSemana { get; set; } // Esto se agrego aver k rollo
     }
 }
