@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\js\\vistas\\Categoria.js"
     },
     {
+      "Id": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\DashBoard.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\DashBoard.js"
+    },
+    {
       "Id": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\HistorialVenta.js",
       "PackagePath": "staticwebassets\\js\\vistas\\HistorialVenta.js"
     },
