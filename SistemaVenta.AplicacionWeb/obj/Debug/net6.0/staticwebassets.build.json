@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JtQnzRxQAD4ET6QGHO6A736BsbMX/VWM8sMgyPaNd9k=",
+  "Hash": "ofSt0GOtCmGebc2W17Edwst1REAl7fnlkMH8eKJy3Oo=",
   "Source": "SistemaVenta.AplicacionWeb",
   "BasePath": "_content/SistemaVenta.AplicacionWeb",
   "Mode": "Default",
@@ -376,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vistas\\HistorialVenta.js"
+    },
+    {
+      "Identity": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\HomePerfil.js",
+      "SourceId": "SistemaVenta.AplicacionWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\",
+      "BasePath": "_content/SistemaVenta.AplicacionWeb",
+      "RelativePath": "js/vistas/HomePerfil.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\HomePerfil.js"
     },
     {
       "Identity": "C:\\Users\\alexs\\Documents\\programacion\\.net\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Negocio.js",
