@@ -38,8 +38,10 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            @await Component.InvokeAsync("Menu");
+
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+@*          <li class="nav-item">
                 <a class="nav-link" href="@Url.Action("Index","DashBoard")">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -100,7 +102,7 @@
                     </div>
                 </div>
             </li>
-
+*@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Sidebar Toggler (Sidebar) -->

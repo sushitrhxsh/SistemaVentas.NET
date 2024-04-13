@@ -49,9 +49,9 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             GenericResponse<VMUsuario> response = new GenericResponse<VMUsuario>();
             try
             {
-                ClaimsPrincipal claimsUser = HttpContext.User;
+                ClaimsPrincipal claimUser = HttpContext.User;
                 
-                string idUsuario =  claimsUser.Claims
+                string idUsuario =  claimUser.Claims
                     .Where(c => c.Type == ClaimTypes.NameIdentifier)
                     .Select(c => c.Value).SingleOrDefault();
 
