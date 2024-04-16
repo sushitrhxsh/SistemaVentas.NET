@@ -70,14 +70,13 @@ namespace SistemaVenta.BLL.Implementacion
 
                             if(response.CharacterSet == null){
                                 readerStream = new StreamReader(dataStream);
-                            } else{
+                            } else {
                                 readerStream = new StreamReader(dataStream,Encoding.GetEncoding(response.CharacterSet));
                             }
 
                             htmlCorreo = readerStream.ReadToEnd();
                             response.Close();
                             readerStream.Close();
-
                         }
                     }
 
@@ -90,8 +89,7 @@ namespace SistemaVenta.BLL.Implementacion
                 usuario_creado = query.Include(r => r.IdRolNavigation).First();
                 
                 return usuario_creado;
-
-            } catch(Exception ex){
+            } catch(Exception ex) {
                  throw;
             }
         }
@@ -131,8 +129,7 @@ namespace SistemaVenta.BLL.Implementacion
                 Usuario usuario_editado = queryUsuario.Include(r => r.IdRolNavigation).First();
 
                 return usuario_editado;
-
-            }catch{
+            } catch {
                 throw;
             }
         }
@@ -154,7 +151,6 @@ namespace SistemaVenta.BLL.Implementacion
                 }
 
                 return true;
-
             } catch {
                 throw;
             }
@@ -164,7 +160,7 @@ namespace SistemaVenta.BLL.Implementacion
         {
            string clave_encriptada = _utilidadesService.ConvertirSha256(clave);
            Usuario usuario_encontrado = await _repositorio.Obtener(u => u.Correo.Equals(correo) 
-                && u.Clave.Equals(clave_encriptada));
+                                                            && u.Clave.Equals(clave_encriptada));
             
             return usuario_encontrado;
         }
@@ -193,7 +189,6 @@ namespace SistemaVenta.BLL.Implementacion
                 bool respuesta = await _repositorio.Editar(usuario_encontrado);
                 
                 return respuesta;
-
             } catch {
                 throw;
             }
@@ -216,7 +211,6 @@ namespace SistemaVenta.BLL.Implementacion
                 bool respuesta = await _repositorio.Editar(usuario_encontrado);
 
                 return respuesta;
-
             } catch(Exception ex) {
                 throw;
             }
@@ -263,13 +257,12 @@ namespace SistemaVenta.BLL.Implementacion
                 }
 
                 if(!correo_enviado){
-                     throw new TaskCanceledException("Tenemos problemas. Porfavor intentalo de nuevo mas tarde.");
+                    throw new TaskCanceledException("Tenemos problemas. Porfavor intentalo de nuevo mas tarde.");
                 }
                 
                 bool respuesta = await _repositorio.Editar(usuario_encontrado);
 
                 return respuesta;
-
             } catch {
                 throw;
             }

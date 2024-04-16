@@ -46,7 +46,6 @@ namespace SistemaVenta.BLL.Implementacion
                     .PutAsync(StreamArchivo,cancellation.Token);
 
                 UrlImagen = await task;
-
             } catch {
                 UrlImagen = "";
             }
@@ -82,7 +81,6 @@ namespace SistemaVenta.BLL.Implementacion
                 await task;
 
                 return true;
-
             } catch {
                 return false;
             }

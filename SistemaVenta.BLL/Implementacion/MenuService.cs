@@ -54,7 +54,6 @@ namespace SistemaVenta.BLL.Implementacion
                                     }).ToList();
 
             return listaMenu;
-
         }
 
     }

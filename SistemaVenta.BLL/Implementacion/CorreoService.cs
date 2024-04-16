@@ -52,7 +52,6 @@ namespace SistemaVenta.BLL.Implementacion
                 
                 clienteServidor.Send(correo);
                 return true;
-
             } catch {
                 return false;
             }
