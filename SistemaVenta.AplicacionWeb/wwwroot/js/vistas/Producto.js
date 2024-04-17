@@ -73,6 +73,7 @@ $(document).ready(function (){
 /* ------------------------------------- *
  *       Funciones de acciones           *
  * ------------------------------------- */
+// Mostrar el modal
 $("#btnNuevo").click(function (){
     mostralModal();
 });
@@ -153,6 +154,7 @@ $("#btnGuardar").click(function (){
 // Editar
 let filaSeleccionada;
 $("#tbdata tbody").on("click",".btn-editar", function (){
+
     if($(this).closest("tr").hasClass("child")){
         filaSeleccionada = $(this).closest("tr").prev();
     } else {
@@ -215,10 +217,10 @@ $("#tbdata tbody").on("click",".btn-eliminar", function (){
     
 });
 
-
 /* ----------------------------------------- *
  *       Funciones modals y renders          *
  * ----------------------------------------- */
+// Funcion para mostrar el modal
 function mostralModal(modelo = MODELO_BASE){
     $("#txtId").val(modelo.idProducto);
     $("#txtCodigoBarra").val(modelo.codigoBarra);
@@ -234,10 +236,12 @@ function mostralModal(modelo = MODELO_BASE){
     $("#modalData").modal("show");
 }
 
+// Funcion para renderizar la img
 function renderImagen(data){
     return '<img style="height:60px" src="' + data + '" class="rounded mx-auto d-block">';
 }
 
+// Funcion para renderizar el span status
 function renderStatus(data){
     if (data === 1)
         return '<span class="badge badge-success">Activo</span>';

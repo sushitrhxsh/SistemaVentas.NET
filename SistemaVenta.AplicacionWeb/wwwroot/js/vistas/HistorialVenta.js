@@ -1,4 +1,3 @@
-
 const VISTA_BUSQUEDA = {
     busquedaFecha: () => {
         $("#txtFechaInicio").val("");
@@ -17,7 +16,6 @@ const VISTA_BUSQUEDA = {
         $(".busqueda-fecha").hide();
     }   
 }
-
 
 $(document).ready(function (){
     VISTA_BUSQUEDA["busquedaFecha"]();

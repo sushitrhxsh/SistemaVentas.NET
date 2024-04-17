@@ -20,8 +20,8 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.ViewComponents
 
             if(claimUser.Identity.IsAuthenticated){
                 nombreUsuario = claimUser.Claims
-                    .Where(c => c.Type == ClaimTypes.Name)
-                    .Select(c => c.Value).SingleOrDefault();
+                                .Where(c => c.Type == ClaimTypes.Name)
+                                .Select(c => c.Value).SingleOrDefault();
                 
                 urlFotoUsuario = ((ClaimsIdentity)claimUser.Identity).FindFirst("UrlFoto").Value;
             }

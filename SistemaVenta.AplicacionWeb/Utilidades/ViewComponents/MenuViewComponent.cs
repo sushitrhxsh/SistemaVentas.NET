@@ -28,9 +28,9 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.ViewComponents
             List<VMMenu> listaMenus;
 
             if(claimUser.Identity.IsAuthenticated){
-                string idUsuario =  claimUser.Claims
-                        .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                        .Select(c => c.Value).SingleOrDefault();
+                string idUsuario = claimUser.Claims
+                                   .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                                   .Select(c => c.Value).SingleOrDefault();
             
                 listaMenus = _mapper.Map<List<VMMenu>> (await _menuService.ObtenerMenus(int.Parse(idUsuario)));
 

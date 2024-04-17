@@ -1,6 +1,4 @@
-
 $(document).ready(function (){
-
     $("div.container-fluid").LoadingOverlay("show");
 
     fetch("/DashBoard/ObtenerResumen")

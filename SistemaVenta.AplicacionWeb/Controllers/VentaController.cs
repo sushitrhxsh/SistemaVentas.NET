@@ -64,9 +64,9 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             {
                 ClaimsPrincipal claimsUser = HttpContext.User;
                 
-                string idUsuario =  claimsUser.Claims
-                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                    .Select(c => c.Value).SingleOrDefault();
+                string idUsuario = claimsUser.Claims
+                                   .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                                   .Select(c => c.Value).SingleOrDefault();
                 
                 modelo.IdUsuario = int.Parse(idUsuario);
 
@@ -108,7 +108,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                         Page = urlPlantillaVista
                     }
                 }
-
             };
 
             var archivoPDF = _converter.Convert(pdf);

@@ -53,21 +53,18 @@ namespace SistemaVenta.BLL.Implementacion
                 DateTime fecha_inicio = DateTime.ParseExact(fechaInicio,"dd/MM/yyyy",new CultureInfo("es-MX"));
                 DateTime fecha_fin = DateTime.ParseExact(fechaFin,"dd/MM/yyyy",new CultureInfo("es-MX"));
 
-                return query.Where(v => 
-                        v.FechaRegistro.Value.Date >= fecha_inicio.Date && 
-                        v.FechaRegistro.Value.Date <= fecha_fin.Date 
-                    ) 
-                      .Include(tdv => tdv.IdTipoDocumentoVentaNavigation)
-                      .Include(u => u.IdUsuarioNavigation)
-                      .Include(dv => dv.DetalleVenta)
-                      .ToList();
+                return query.Where(v => v.FechaRegistro.Value.Date >= fecha_inicio.Date && v.FechaRegistro.Value.Date <= fecha_fin.Date) 
+                            .Include(tdv => tdv.IdTipoDocumentoVentaNavigation)
+                            .Include(u => u.IdUsuarioNavigation)
+                            .Include(dv => dv.DetalleVenta)
+                            .ToList();
 
             } else {
                 return query.Where(v => v.NumeroVenta == numeroVenta)
-                          .Include(tdv => tdv.IdTipoDocumentoVentaNavigation)
-                          .Include(u => u.IdUsuarioNavigation)
-                          .Include(dv => dv.DetalleVenta)
-                          .ToList();
+                            .Include(tdv => tdv.IdTipoDocumentoVentaNavigation)
+                            .Include(u => u.IdUsuarioNavigation)
+                            .Include(dv => dv.DetalleVenta)
+                            .ToList();
             }
         }
 

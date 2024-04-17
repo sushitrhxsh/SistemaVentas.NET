@@ -117,6 +117,5 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
 
-
     }
 }

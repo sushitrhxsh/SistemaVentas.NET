@@ -49,13 +49,13 @@ $(document).ready(function (){
 /* ------------------------------------- *
  *       Funciones de acciones           *
  * ------------------------------------- */
+// Mostrar el btn y abrir el modal
 $("#btnNuevo").click(function (){
     mostralModal();
 });
 
 // Guardar
-$("#btnGuardar").click(function (){
-    
+$("#btnGuardar").click(function (){ 
     if($("#txtDescripcion").val().trim() == ""){
         toastr.warning("", "Debe completar el campo descripcion");
         $("#txtDescripcion").focus();
@@ -183,6 +183,7 @@ $("#tbdata tbody").on("click",".btn-eliminar", function (){
 /* ----------------------------------------- *
  *       Funciones modals y renders          *
  * ----------------------------------------- */
+// Funcion para mostrar el nodal con sus datos llenos
 function mostralModal(modelo = MODELO_BASE){
     $("#txtId").val(modelo.idCategoria);
     $("#txtDescripcion").val(modelo.descripcion);
@@ -191,6 +192,7 @@ function mostralModal(modelo = MODELO_BASE){
     $("#modalData").modal("show");
 }
 
+// Funcion para renderizar los span
 function renderStatus(data){
     if (data === 1)
         return '<span class="badge badge-success">Activo</span>';

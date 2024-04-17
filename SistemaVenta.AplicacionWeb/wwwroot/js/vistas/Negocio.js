@@ -1,5 +1,4 @@
 $(document).ready(function (){
-
     $(".card-body").LoadingOverlay("show");
 
     fetch("/Negocio/Obtener")

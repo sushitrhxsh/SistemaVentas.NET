@@ -22,11 +22,11 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
 
             #region Usuario
             CreateMap<Usuario,VMUsuario>()
-                .ForMember(dest => dest.EsActivo, opt => opt.MapFrom(src => src.EsActivo == true?1:0))
-                .ForMember(dest => dest.NombreRol, opt => opt.MapFrom(src => src.IdRolNavigation.Descripcion));
+                .ForMember(dest => dest.EsActivo,   opt => opt.MapFrom(src => src.EsActivo == true?1:0))
+                .ForMember(dest => dest.NombreRol,  opt => opt.MapFrom(src => src.IdRolNavigation.Descripcion));
             
             CreateMap<VMUsuario,Usuario>()
-                .ForMember(dest => dest.EsActivo, opt => opt.MapFrom(src => src.EsActivo == 1 ?true:false))
+                .ForMember(dest => dest.EsActivo,   opt => opt.MapFrom(src => src.EsActivo == 1 ?true:false))
                 .ForMember(dest => dest.IdRolNavigation, opt => opt.Ignore());
             #endregion
             
@@ -41,10 +41,10 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
 
             #region Categoria
             CreateMap<Categoria,VMCategoria>()
-                .ForMember(dest => dest.EsActivo, opt => opt.MapFrom(src => src.EsActivo == true?1:0));
+                .ForMember(dest => dest.EsActivo,   opt => opt.MapFrom(src => src.EsActivo == true?1:0));
             
             CreateMap<VMCategoria,Categoria>()
-                .ForMember(dest => dest.EsActivo, opt => opt.MapFrom(src => src.EsActivo == 1?true:false));
+                .ForMember(dest => dest.EsActivo,   opt => opt.MapFrom(src => src.EsActivo == 1?true:false));
             #endregion
 
             #region Producto
@@ -67,26 +67,26 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
             #region Venta
             CreateMap<Venta,VMVenta>()
                 .ForMember(dest => dest.TipoDocumentoVenta, opt => opt.MapFrom(src => src.IdTipoDocumentoVentaNavigation.Descripcion))
-                .ForMember(dest => dest.Usuario,       opt => opt.MapFrom(src => src.IdUsuarioNavigation.Nombre))
-                .ForMember(dest => dest.SubTotal,      opt => opt.MapFrom(src => Convert.ToString(src.SubTotal.Value, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.ImpuestoTotal, opt => opt.MapFrom(src => Convert.ToString(src.ImpuestoTotal.Value, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.Total,         opt => opt.MapFrom(src => Convert.ToString(src.Total.Value, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.FechaRegistro, opt => opt.MapFrom(src => src.FechaRegistro.Value.ToString("dd/MM/yyyy")));
+                .ForMember(dest => dest.Usuario,        opt => opt.MapFrom(src => src.IdUsuarioNavigation.Nombre))
+                .ForMember(dest => dest.SubTotal,       opt => opt.MapFrom(src => Convert.ToString(src.SubTotal.Value, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.ImpuestoTotal,  opt => opt.MapFrom(src => Convert.ToString(src.ImpuestoTotal.Value, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.Total,          opt => opt.MapFrom(src => Convert.ToString(src.Total.Value, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.FechaRegistro,  opt => opt.MapFrom(src => src.FechaRegistro.Value.ToString("dd/MM/yyyy")));
             
             CreateMap<VMVenta,Venta>()
-                .ForMember(dest => dest.SubTotal,      opt => opt.MapFrom(src => Convert.ToDecimal(src.SubTotal, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.ImpuestoTotal, opt => opt.MapFrom(src => Convert.ToDecimal(src.ImpuestoTotal, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.Total,         opt => opt.MapFrom(src => Convert.ToDecimal(src.Total, new CultureInfo("es-MX"))));
+                .ForMember(dest => dest.SubTotal,       opt => opt.MapFrom(src => Convert.ToDecimal(src.SubTotal, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.ImpuestoTotal,  opt => opt.MapFrom(src => Convert.ToDecimal(src.ImpuestoTotal, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.Total,          opt => opt.MapFrom(src => Convert.ToDecimal(src.Total, new CultureInfo("es-MX"))));
             #endregion
 
             #region DetalleVenta
             CreateMap<DetalleVenta,VMDetalleVenta>()
-                .ForMember(dest => dest.Precio, opt => opt.MapFrom(src => Convert.ToString(src.Precio.Value, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.Total, opt => opt.MapFrom(src => Convert.ToString(src.Total.Value, new CultureInfo("es-MX"))));
+                .ForMember(dest => dest.Precio,     opt => opt.MapFrom(src => Convert.ToString(src.Precio.Value, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.Total,      opt => opt.MapFrom(src => Convert.ToString(src.Total.Value, new CultureInfo("es-MX"))));
             
             CreateMap<VMDetalleVenta,DetalleVenta>()
-                .ForMember(dest => dest.Precio, opt => opt.MapFrom(src => Convert.ToDecimal(src.Precio, new CultureInfo("es-MX"))))
-                .ForMember(dest => dest.Total, opt => opt.MapFrom(src => Convert.ToDecimal(src.Total, new CultureInfo("es-MX"))));
+                .ForMember(dest => dest.Precio,     opt => opt.MapFrom(src => Convert.ToDecimal(src.Precio, new CultureInfo("es-MX"))))
+                .ForMember(dest => dest.Total,      opt => opt.MapFrom(src => Convert.ToDecimal(src.Total, new CultureInfo("es-MX"))));
             
             CreateMap<DetalleVenta,VMReporteVenta>()
                 .ForMember(dest => dest.FechaRegistro,    opt => opt.MapFrom(src => src.IdVentaNavigation.FechaRegistro.Value.ToString("dd/MM/yyyy")))

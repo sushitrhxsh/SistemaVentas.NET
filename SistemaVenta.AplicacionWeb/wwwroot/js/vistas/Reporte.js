@@ -1,6 +1,5 @@
 let tablaData;
 $(document).ready(function (){
-
     $.datepicker.setDefaults($.datepicker.regional["es"]);
 
     $("#txtFechaInicio").datepicker({ dateFormat: "dd/mm/yy" });

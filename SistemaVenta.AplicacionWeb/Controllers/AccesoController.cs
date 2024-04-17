@@ -39,7 +39,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
         public IActionResult RestablecerClave()
         {
-
             return View();
         }
         
@@ -55,7 +54,8 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
             ViewData["mensaje"] = null;
 
-            List<Claim> claims = new List<Claim>(){
+            List<Claim> claims = new List<Claim>()
+            {
                 new Claim(ClaimTypes.Name, usuario_encontrado.Nombre),
                 new Claim(ClaimTypes.NameIdentifier, usuario_encontrado.IdUsuario.ToString()),
                 new Claim(ClaimTypes.Role, usuario_encontrado.IdRol.ToString()),
@@ -66,7 +66,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
             AuthenticationProperties properties = new AuthenticationProperties(){
                 AllowRefresh = true,
-                IsPersistent = modelo.MantenerSesion // Cambiar vmodels
+                IsPersistent = modelo.MantenerSesion 
             };
 
             await HttpContext.SignInAsync(

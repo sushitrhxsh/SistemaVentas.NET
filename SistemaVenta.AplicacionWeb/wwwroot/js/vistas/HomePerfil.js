@@ -1,6 +1,5 @@
 
 $(document).ready(function (){
-
     $(".container-fluid").LoadingOverlay("show");
 
     fetch("/Home/ObtenerUsuario")
@@ -30,7 +29,7 @@ $(document).ready(function (){
  * ---------------------------------- */
 //Guardar informacion de perfil
 $("#btnGuardarCambios").click(function (){
-
+    
     if($("#txtCorreo").val().trim() == ""){
         toastr.warning("", "Debe completar el campo correo");
         $("#txtCorreo").focus();

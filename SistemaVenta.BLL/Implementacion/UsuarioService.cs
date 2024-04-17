@@ -46,8 +46,7 @@ namespace SistemaVenta.BLL.Implementacion
                 entidad.Clave = _utilidadesService.ConvertirSha256(clave_generada);
                 
                 entidad.NombreFoto = NombreFoto;
-                if(Foto != null)
-                {
+                if(Foto != null){
                     string urlFoto = await _fireBaseService.SubirStorage(Foto,"carpeta_usuario",NombreFoto);
                     entidad.UrlFoto = urlFoto;
                 }
@@ -65,7 +64,8 @@ namespace SistemaVenta.BLL.Implementacion
                     HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                     if(response.StatusCode == HttpStatusCode.OK){
-                        using(Stream dataStream = response.GetResponseStream()){
+                        using(Stream dataStream = response.GetResponseStream())
+                        {
                             StreamReader readerStream = null;
 
                             if(response.CharacterSet == null){
@@ -89,7 +89,7 @@ namespace SistemaVenta.BLL.Implementacion
                 usuario_creado = query.Include(r => r.IdRolNavigation).First();
                 
                 return usuario_creado;
-            } catch(Exception ex) {
+            } catch {
                  throw;
             }
         }
@@ -235,7 +235,8 @@ namespace SistemaVenta.BLL.Implementacion
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 
                 if(response.StatusCode == HttpStatusCode.OK){ 
-                    using(Stream dataStream = response.GetResponseStream()){
+                    using(Stream dataStream = response.GetResponseStream())
+                    {
                         StreamReader readerStream = null;
                         
                         if(response.CharacterSet == null){

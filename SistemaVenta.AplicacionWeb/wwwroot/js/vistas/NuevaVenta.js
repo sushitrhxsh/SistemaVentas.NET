@@ -2,8 +2,7 @@
 let ValorImpuesto = 0;
 
 $(document).ready(function (){
-
-    // # Llenear el combobox de #cboTipoDocumentoVenta
+    // Llenear el combobox de #cboTipoDocumentoVenta
     fetch("/Venta/ListaTipoDocumentoVenta") 
     .then(response => {
         return response.ok ? response.json() : Promise.reject(response);
@@ -208,7 +207,7 @@ $("#btnTerminarVenta").click(function (){
     }
 
     const vmDetalleVenta = ProductosParaVenta;
-    console.log("vmDetalleVenta",vmDetalleVenta);
+    //console.log("vmDetalleVenta",vmDetalleVenta);
     const venta = {
         idTipoDocumentoVenta:$("#cboTipoDocumentoVenta").val(),
         documentoCliente:    $("#txtDocumentoCliente").val(),
@@ -218,7 +217,7 @@ $("#btnTerminarVenta").click(function (){
         total:               $("#txtTotal").val(),
         DetalleVenta:        vmDetalleVenta
     }
-    console.log("venta",venta)
+    //console.log("venta",venta)
 
    $("#btnTerminarVenta").LoadingOverlay("show");
 
@@ -228,14 +227,14 @@ $("#btnTerminarVenta").click(function (){
         body: JSON.stringify(venta),
     }) 
     .then(response => {
-        console.log("response",response);
+        //console.log("response",response);
         $("#btnTerminarVenta").LoadingOverlay("hide");
         return response.ok ? response.json() : Promise.reject(response);
     })
     .then(responseJson => {
-        console.log("/Venta/RegistrarVenta",responseJson.objeto);
+        //console.log("/Venta/RegistrarVenta",responseJson.objeto);
         if(responseJson.estado){
-            console.log("If:",responseJson);
+            //console.log("If:",responseJson);
             ProductosParaVenta = [];
             mostrarProductoPrecios();
 
@@ -248,7 +247,7 @@ $("#btnTerminarVenta").click(function (){
         } else {
             // Checarlo mañana no guarda el dato y pasa directo al else
             swal("Lo sentimos!", "No se pudo registrar la venta", "error");
-            console.log("else:",responseJson.objeto);
+            //console.log("else:",responseJson.objeto);
         }
     });
 

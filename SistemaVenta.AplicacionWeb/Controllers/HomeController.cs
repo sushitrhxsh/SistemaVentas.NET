@@ -51,11 +51,9 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             {
                 ClaimsPrincipal claimUser = HttpContext.User;
                 
-                string idUsuario =  claimUser.Claims
-                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                    .Select(c => c.Value).SingleOrDefault();
-
-                Console.WriteLine("idUsuario: "+ idUsuario);
+                string idUsuario = claimUser.Claims
+                                   .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                    .               Select(c => c.Value).SingleOrDefault();
                 
                 VMUsuario usuario = _mapper.Map<VMUsuario>(await _usuarioService.ObtenerPorId(int.Parse(idUsuario)));
                 
@@ -79,8 +77,8 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                 ClaimsPrincipal claimsUser = HttpContext.User;
                 
                 string idUsuario = claimsUser.Claims
-                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                    .Select(c => c.Value).SingleOrDefault();
+                                   .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                                   .Select(c => c.Value).SingleOrDefault();
                 
                 Usuario entidad = _mapper.Map<Usuario>(modelo);
                 
@@ -105,9 +103,9 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             {
                 ClaimsPrincipal claimsUser = HttpContext.User;
                 
-                string idUsuario =  claimsUser.Claims
-                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                    .Select(c => c.Value).SingleOrDefault();
+                string idUsuario = claimsUser.Claims
+                                   .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                                   .Select(c => c.Value).SingleOrDefault();
                 
                 bool resultado = await _usuarioService.CambiarClave(
                     int.Parse(idUsuario),
