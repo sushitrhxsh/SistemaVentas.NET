@@ -1143,7 +1143,10 @@
           "SistemaVenta.Entity": "1.0.0"
         },
         "runtime": {
-          "SistemaVenta.DAL.dll": {}
+          "SistemaVenta.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SistemaVenta.Entity/1.0.0": {
@@ -1151,7 +1154,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.27"
         },
         "runtime": {
-          "SistemaVenta.Entity.dll": {}
+          "SistemaVenta.Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

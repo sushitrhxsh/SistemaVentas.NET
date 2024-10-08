@@ -23,7 +23,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         private readonly IUsuarioService _usuarioService;
         public AccesoController(IUsuarioService usuarioService)
         {
-            _usuarioService = usuarioService;      
+            _usuarioService = usuarioService;  
         }
 
         public IActionResult Login()

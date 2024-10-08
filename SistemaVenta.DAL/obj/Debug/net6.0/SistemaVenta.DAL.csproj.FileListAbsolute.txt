@@ -14,3 +14,19 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.AssemblyReference.cache
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.sourcelink.json
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaV.EE7A9206.Up2Date
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.deps.json
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.Entity.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.AssemblyReference.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.AssemblyInfoInputs.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.AssemblyInfo.cs
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.sourcelink.json
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaV.EE7A9206.Up2Date
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\refint\SistemaVenta.DAL.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.DAL\obj\Debug\net6.0\ref\SistemaVenta.DAL.dll

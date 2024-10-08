@@ -18,3 +18,23 @@ C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.csproj.AssemblyReference.cache
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.sourcelink.json
 C:\Users\alexs\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaV.CF7CC950.Up2Date
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.IOC.deps.json
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.IOC.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.IOC.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.BLL.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.Entity.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.BLL.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.csproj.AssemblyReference.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.AssemblyInfoInputs.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.AssemblyInfo.cs
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.csproj.CoreCompileInputs.cache
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.sourcelink.json
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaV.CF7CC950.Up2Date
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\refint\SistemaVenta.IOC.dll
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.pdb
+C:\Users\Alex FS\Documents\programacion\.net\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\ref\SistemaVenta.IOC.dll
