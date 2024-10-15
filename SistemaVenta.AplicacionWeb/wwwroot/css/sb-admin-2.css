@@ -10922,6 +10922,12 @@ a:focus {
   background-size: cover;
 }
 
+.bg-register-img {
+  background: url("https://healingspringswellness.com/wp-content/uploads/2020/12/AdobeStock_354245058.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-register-image {
   background: url("https://images.unsplash.com/photo-1541574823565-f1d660886187?w=600");
   background-position: center;

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+using AutoMapper;
+using Newtonsoft.Json;
+using SistemaVenta.AplicacionWeb.Utilidades.Response;
+
 using SistemaVenta.AplicacionWeb.Models.ViewModels;
 using SistemaVenta.BLL.Interfaces;
 using SistemaVenta.Entity;
@@ -21,9 +25,11 @@ namespace SistemaVenta.AplicacionWeb.Controllers
     {
 
         private readonly IUsuarioService _usuarioService;
-        public AccesoController(IUsuarioService usuarioService)
+        private readonly IMapper _mapper;
+        public AccesoController(IUsuarioService usuarioService,IMapper mapper)
         {
             _usuarioService = usuarioService;  
+            _mapper = mapper;
         }
 
         public IActionResult Login()
@@ -42,6 +48,10 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return View();
         }
         
+        public IActionResult Registrar(){
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Login(VMUsuarioLogin modelo)
         {
@@ -100,6 +110,40 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             }
 
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Registrar([FromForm] IFormFile foto,[FromForm] string modelo){
+            GenericResponse<VMUsuario> gResponse = new GenericResponse<VMUsuario>();
+
+            try
+            {
+                VMUsuario vmUsuario = JsonConvert.DeserializeObject<VMUsuario>(modelo);
+
+                string nombreFoto = "";
+                Stream fotoStream = null;
+
+                if(foto != null){
+                    string nombre_en_codigo = Guid.NewGuid().ToString("N");
+                    string extension = Path.GetExtension(foto.FileName);
+                    nombreFoto = string.Concat(nombre_en_codigo, extension);
+                    fotoStream = foto.OpenReadStream();
+                }
+
+                string urlPlantillaCorreo = $"{this.Request.Scheme}://{this.Request.Host}/Plantilla/EnviarClave?correo=[correo]&clave=[clave]";
+
+                Usuario usuario_creado = await _usuarioService.Crear(_mapper.Map<Usuario>(vmUsuario),fotoStream,nombreFoto,urlPlantillaCorreo);
+                vmUsuario = _mapper.Map<VMUsuario>(usuario_creado);
+                
+                gResponse.Estado = true;
+                gResponse.Objeto = vmUsuario;
+
+            } catch (Exception ex) {
+                gResponse.Estado = false;
+                gResponse.Mensaje = ex.Message;
+            }
+
+            return StatusCode(StatusCodes.Status200OK, gResponse);
         }
 
     }
